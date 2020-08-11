@@ -5,7 +5,6 @@ A backend text messaging service using REST API and Python.
 * [Technologies used](#technologies-used)
 * [Installation](#installation)
 * [Usage](#usage)
-  ** [The ```home``` route:](#The-```home```-route:)
 * [Selected example responses](#selected-example-responses)
 * [Future developments/improvements](#future-developments/improvements)
 
@@ -32,8 +31,8 @@ Since I didn't have a contact person, I did some assumptions/choices:
 * Some basic error handling in case the user gives the wrong input
 
 ## Technologies used
-* <a href="https://eslint.org/" title="Python"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/python.svg" alt="Python" width="30px" height="30px"></img></a> Python 3.7.7
-* <a href="https://eslint.org/" title="Flask"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/flask.svg" alt="Flask" width="30px" height="30px"></img></a> Flask 1.1.2
+* <a href="https://www.python.org/" title="Python"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/python.svg" alt="Python" width="30px" height="30px"></img> Python 3.7.7</a>
+* <a href="https://flask.palletsprojects.com/en/1.1.x/" title="Flask"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/flask.svg" alt="Flask" width="30px" height="30px"></img>Flask 1.1.2</a> 
 
 ## Installation
 Make sure you have installed the technologies above on you machine.
@@ -47,28 +46,28 @@ python3 -m flask run
 ```
 Suggested to use curl for sending HTTP requests.
 
-#### The ```home``` route:
+### The ```home``` route
 ```curl -X GET http://localhost:5000```
 
-#### The ```users``` route:
+### The ```users``` route
 For admin to check all users data:
 ```curl -X GET http://localhost:5000/users```
 
 For new users to create a new account:
 ```curl -X POST -i -d "username=YOUR_UNIQUE_USERNAME" http://localhost:5000/users```
 
-#### The ```users/USERNAME``` route:
+### The ```users/USERNAME``` route
 To check data of specific user:
 ```curl -X GET http://localhost:5000/users/YOUR_UNIQUE_USERNAME```
 
 For a user to delete his/her own account (messages will not be deleted):
 ```curl -X DELETE -i http://localhost:5000/users/YOUR_UNIQUE_USERNAME```
 
-#### The ```messages``` route:
+### The ```messages``` route
 For admin to check all messages:
 ```curl -X GET http://localhost:5000/messages```
 
-#### The ```messages/USERNAME```route:
+### The ```messages/USERNAME```route
 For user to check unread messages:
 ```curl -X GET http://localhost:5000/messages/YOUR_UNIQUE_USERNAME```
 
@@ -83,7 +82,7 @@ For user to delete his/her own message(s) (Note that the message IDs are in the 
 
 ## Selected example responses
 
-#### Specific user data 
+### Specific user data 
 ```curl -X GET http://localhost:5000/users/sarasmith```
 ```
 {
@@ -93,7 +92,7 @@ For user to delete his/her own message(s) (Note that the message IDs are in the 
 }
 ```
 
-#### Create new user account
+### Create new user account
 ```curl -X POST -i -d "username=johndoe" http://localhost:5000/users```
 ```
 HTTP/1.0 201 CREATED
@@ -106,7 +105,7 @@ Date: Tue, 11 Aug 2020 08:18:26 GMT
 New user account successfully created.
 ```
 
-#### Unread messages
+### Unread messages
 ```curl -X GET http://localhost:5000/messages/sarasmith```
 ```
 {
@@ -130,7 +129,7 @@ New user account successfully created.
 You have no unread messages.
 ```
 
-#### Messages in given time period
+### Messages in given time period
 ```curl -X GET "http://localhost:5000/messages/sarasmith?from=2020-08-01&to=2020-08-20"```
 ```
 {
@@ -170,7 +169,7 @@ You have no unread messages.
   ]
 }
 ```
-#### Deleted message(s)
+### Deleted message(s)
 ```curl -X DELETE -i -d "id=36a6ca7d-c81b-49c2-bee5-8155bbecaa55, b3e22872-6bee-4c5c-a8a0-3d4993218ffe" http://localhost:5000/messages/sarasmith```
 ```
 HTTP/1.0 204 NO CONTENT
