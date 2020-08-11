@@ -129,7 +129,7 @@ New user account successfully created.
 You have no unread messages.
 ```
 
-### Messages in given time period
+### Messages in a given time period
 ```curl -X GET "http://localhost:5000/messages/sarasmith?from=2020-08-01&to=2020-08-20"```
 ```
 {
