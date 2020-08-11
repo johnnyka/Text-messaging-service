@@ -1,0 +1,34 @@
+{
+    "users": [
+        {
+            "username": "johndoe",
+            "created": "2020-07-11 09:46:24.916432",
+            "id": "7d1c468a-311f-4055-9536-34f1075633e2"
+        },
+        {
+            "username": "sarasmith",
+            "created": "2020-07-11 09:46:24.916432",
+            "id": "b7cec671-3553-4764-b765-ef2cc0cfd59a"
+        },
+        {
+            "username": "harryblack",
+            "created": "2020-07-11 09:46:24.916432",
+            "id": "9c90bb7f-72ad-47ba-880d-4f129b4c98df"
+        },
+        {
+            "username": "joevalley",
+            "created": "2020-07-11 09:46:24.916432",
+            "id": "fb4610b4-a712-4910-94a8-af3259c8fc01"
+        },
+        {
+            "username": "jane_moore",
+            "created": "2020-08-10 09:48:15.581345",
+            "id": "1165738a-3b23-4eac-b833-75318fb925ff"
+        },
+        {
+            "username": "tom_petersen",
+            "created": "2020-08-10 12:34:13.870668",
+            "id": "205dc005-61b5-468f-b52f-70bc4c82bdfb"
+        }
+    ]
+}

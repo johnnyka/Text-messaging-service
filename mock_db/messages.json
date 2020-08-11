@@ -1,0 +1,60 @@
+{
+    "messages": [
+        {
+            "from": "johndoe",
+            "to": "sarasmith",
+            "id": "542bb40b-0f33-4f8a-aceb-e9763a300746",
+            "date": "2020-08-07 23:08:17.936505",
+            "read": true,
+            "message": "Hi Sara! Long time no see. How are you nowadays?"
+        },
+        {
+            "from": "sarasmith",
+            "to": "johndoe",
+            "id": "ccaac120-3280-4ebe-8a14-e9a33a433164",
+            "date": "2020-08-07 23:09:20.726740",
+            "read": true,
+            "message": "Hi John! I'm good. We should meet up when this corona situation gets better!"
+        },
+        {
+            "from": "johndoe",
+            "to": "sarasmith",
+            "id": "384e3bc6-2cc2-464b-9f93-1b28a3ec3da1",
+            "date": "2020-08-08 00:04:35.914704",
+            "read": true,
+            "message": "Sounds good. Let's keep in touch."
+        },
+        {
+            "from": "johndoe",
+            "to": "harryblack",
+            "id": "0d43ed28-0d52-418d-872e-020fc28ca03b",
+            "date": "2020-08-08 11:01:41.260296",
+            "read": false,
+            "message": "Hi Harry!"
+        },
+        {
+            "from": "sarasmith",
+            "to": "johndoe",
+            "id": "b3e22872-6bee-4c5c-a8a0-3d4993218ffe",
+            "date": "2020-08-11 10:28:32.730591",
+            "read": false,
+            "message": "Hello"
+        },
+        {
+            "from": "harryblack",
+            "to": "sarasmith",
+            "id": "57c5d8a6-07ae-487b-b31a-46686a912993",
+            "date": "2020-08-11 11:49:22.332011",
+            "read": true,
+            "message": "Hi Sara."
+        },
+        {
+            "from": "harryblack",
+            "to": "sarasmith",
+            "id": "43103d93-9398-4caf-9202-e0ffbfd72db7",
+            "date": "2020-08-11 11:49:25.336470",
+            "read": false,
+            "message": "How are you?"
+        }
+    ]
+}
