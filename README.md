@@ -1,12 +1,12 @@
 # Text message service
 A backend text messaging service using REST API and Python.
 ## Table of contents
-* [Description](#Description)
-* [Technologies used](#Technologies-used)
-* [Installation](#Introduction)
-* [Usage](#Usage)
-* [Selected example responses](#Selected-example-responses)
-* [Future developments/improvements](#Future-developments/improvements)
+* [Description](#description)
+* [Technologies used](#technologies-used)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Selected example responses](#selected-example-responses)
+* [Future developments/improvements](#future-developments/improvements)
 
 ## Description
 This app was given by [&lt;/salt>](https://salt.study/) as a coding test.
@@ -31,8 +31,8 @@ Since I didn't have a contact person, I did some assumptions/choices:
 * Some basic error handling in case the user gives the wrong input
 
 ## Technologies used
-* Python 3.7.7 <a href="https://eslint.org/" title="Python"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/python.svg" alt="Python" width="40px" height="40px"></img></a>
-* Flask 1.1.2  <a href="https://eslint.org/" title="Flask"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/flask.svg" alt="Flask" width="40px" height="40px"></img></a>
+* <a href="https://eslint.org/" title="Python"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/python.svg" alt="Python" width="30px" height="30px"></img></a> Python 3.7.7
+* <a href="https://eslint.org/" title="Flask"><img src="https://github.com/tomchen/stack-icons/blob/master/logos/flask.svg" alt="Flask" width="30px" height="30px"></img></a> Flask 1.1.2
 
 ## Installation
 Make sure you have installed the technologies above on you machine.
