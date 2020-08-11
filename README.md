@@ -9,7 +9,7 @@ A backend text messaging service using REST API and Python.
 * [Future developments/improvements](#future-developments/improvements)
 
 ## Description
-This app was given by [&lt;/salt>](https://salt.study/) as a coding test.
+This task was given by [&lt;/salt>](https://salt.study/) as a coding test.
 The instructions were to build a service for sending and retrieving text messages using REST API and Python with the following functionalities:
 * Submit a message to a defined recipient
 * Fetch previously not fetched messages
