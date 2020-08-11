@@ -5,6 +5,7 @@ A backend text messaging service using REST API and Python.
 * [Technologies used](#technologies-used)
 * [Installation](#installation)
 * [Usage](#usage)
+  ** [The ```home``` route:](#The-```home```-route:)
 * [Selected example responses](#selected-example-responses)
 * [Future developments/improvements](#future-developments/improvements)
 
