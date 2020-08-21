@@ -38,7 +38,7 @@ Since I didn't have a contact person, I did some assumptions/choices:
 Make sure you have installed the technologies above on you machine.
 
 ## Usage
-To run the app i development mode:
+To run the app in development mode, write the following in the terminal:
 ```
 export FLASK_APP=app.py
 export FLASK_ENV=development
@@ -50,34 +50,34 @@ Suggested to use curl for sending HTTP requests.
 ```curl -X GET http://localhost:5000```
 
 ### The ```users``` route
-For admin to check all users data:
+For admin to check all users data: <br>
 ```curl -X GET http://localhost:5000/users```
 
-For new users to create a new account:
+For new users to create a new account: <br>
 ```curl -X POST -i -d "username=YOUR_UNIQUE_USERNAME" http://localhost:5000/users```
 
 ### The ```users/USERNAME``` route
-To check data of specific user:
+To check data of specific user: <br>
 ```curl -X GET http://localhost:5000/users/YOUR_UNIQUE_USERNAME```
 
-For a user to delete his/her own account (messages will not be deleted):
+For a user to delete his/her own account (messages will not be deleted): <br>
 ```curl -X DELETE -i http://localhost:5000/users/YOUR_UNIQUE_USERNAME```
 
 ### The ```messages``` route
-For admin to check all messages:
+For admin to check all messages: <br>
 ```curl -X GET http://localhost:5000/messages```
 
 ### The ```messages/USERNAME```route
-For user to check unread messages:
+For user to check unread messages: <br>
 ```curl -X GET http://localhost:5000/messages/YOUR_UNIQUE_USERNAME```
 
-For user to check messages (both read and unread) in a given time period (in this example from 2020-08-01 to 2020-08-20):
+For user to check messages (both read and unread) in a given time period (in this example from 2020-08-01 to 2020-08-20): <br>
 ```curl -X GET "http://localhost:5000/messages/YOUR_UNIQUE_USERNAME?from=2020-08-01&to=2020-08-20"```
 
-For user to send a new message:
+For user to send a new message: <br>
 ```curl -X POST -d "to=YOUR_RECIPIENT&message=YOUR_MESSAGE" http://localhost:5000/messages/YOUR_UNIQUE_USERNAME```
 
-For user to delete his/her own message(s) (Note that the message IDs are in the format of uuid, see example responses below. Also note that several message IDs are comma separated):
+For user to delete his/her own message(s) (Note that the message IDs are in the format of uuid, see example responses below. Also note that several message IDs are comma separated): <br>
 ```curl -X DELETE -i -d "id=MESSAGE_ID_1, MESSAGE_ID_2" http://localhost:5000/messages/YOUR_UNIQUE_USERNAME```
 
 ## Selected example responses
@@ -169,7 +169,7 @@ You have no unread messages.
   ]
 }
 ```
-### Deleted message(s)
+### Delete message(s)
 ```curl -X DELETE -i -d "id=36a6ca7d-c81b-49c2-bee5-8155bbecaa55, b3e22872-6bee-4c5c-a8a0-3d4993218ffe" http://localhost:5000/messages/sarasmith```
 ```
 HTTP/1.0 204 NO CONTENT
